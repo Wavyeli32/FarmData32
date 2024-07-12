@@ -23,7 +23,7 @@
         <button data-cy='choose-kale' 
             @click='pickKaleOption'>Choose Kale</button>
         <button data-cy='add-zucchini' 
-            @click='addZucchini'>Add Zucchini</button>
+            @click='addApple'>Add Apple</button>
         <button data-cy='btn-dropdown-disable' v-show="!disabledMap['DropdownWithAllComponent']"
             @click='toggleDisabled("DropdownWithAllComponent")'>Disable</button>
         <button data-cy='btn-dropdown-enable' v-show="disabledMap['DropdownWithAllComponent']"
@@ -330,8 +330,8 @@ new Vue({
         pickKaleOption() {
             this.pickedCrop = 'KALE'
         },
-        addZucchini() {
-            this.cropList.push('ZUCCHINI')
+        addApple() {
+            this.cropList.push('Apple')
         },
         dateChange(newDate) {
             this.chosenDate = newDate
